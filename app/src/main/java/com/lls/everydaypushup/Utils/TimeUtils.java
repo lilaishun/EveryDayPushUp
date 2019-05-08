@@ -1,6 +1,7 @@
 package com.lls.everydaypushup.Utils;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Formatter;
 import java.util.List;
 import java.util.Locale;
@@ -184,5 +185,15 @@ public class TimeUtils {
 //        } else {
 //            return mFormatter.format("%02d:%02d",minutes,seconds).toString();
 //        }
+    }
+    public static String ForData(){
+        Calendar c = Calendar.getInstance();//
+        int  mYear = c.get(Calendar.YEAR); // 获取当前年份
+        int mMonth = c.get(Calendar.MONTH) + 1;// 获取当前月份
+        int mDay = c.get(Calendar.DAY_OF_MONTH);// 获取当日期
+        int mWay = c.get(Calendar.DAY_OF_WEEK);// 获取当前日期的星期
+        int  mHour = c.get(Calendar.HOUR_OF_DAY);//时
+        int  mMinute = c.get(Calendar.MINUTE);//分
+        return  mYear+"/"+mMonth+"/"+mDay+"/"+" "+mHour+":"+mMinute;
     }
 }

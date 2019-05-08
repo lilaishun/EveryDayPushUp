@@ -3,8 +3,8 @@
     package="com.lls.everydaypushup">
 
     <application
-        android:allowBackup="true"
         android:name=".App.MyApp"
+        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -17,7 +17,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".StartPush"></activity>
+        <activity android:name=".StartPush" />
+        <activity android:name=".spring.SecondActivity"></activity>
     </application>
 
 </manifest>

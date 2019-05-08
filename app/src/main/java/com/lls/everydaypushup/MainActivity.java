@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.lls.everydaypushup.Base.BaseActivity;
 import com.lls.everydaypushup.Utils.ActivityUtil;
+import com.lls.everydaypushup.spring.SecondActivity;
 import com.zr.library.StatusBarManager;
 
 public class MainActivity extends BaseActivity {
@@ -54,6 +55,7 @@ public class MainActivity extends BaseActivity {
                 //跳转到详情页面
                 Intent intent = new Intent();
                intent.setClass(getApplicationContext(), StartPush.class);
+           //    intent.setClass(getApplicationContext(), SecondActivity.class);
                 startActivity(intent);
             }
         });
